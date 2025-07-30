@@ -19,7 +19,7 @@ A simple command-line Python app to track your personal expenses. Add expenses, 
 **Clone the repository**:
    ```bash
    git clone https://github.com/Cema2019/python-apps.git
-   cd expense_tracker
+   cd python-apps/tracking-expenses
    python3 expense_tracker.py
   ```
 
@@ -30,3 +30,8 @@ Follow the on-screen menu to:
 - Show the total amount
 - Filter expenses by category
 - Exit the program
+
+## ▶️ Try it Online
+
+Run the app instantly in your browser:  
+👉 [Open in Replit](https://replit.com/@cema962002/expensetracker)
