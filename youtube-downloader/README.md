@@ -1,10 +1,10 @@
-# YouTube Video Downloader (yt-dlp)
+# YouTube Video & Playlist Downloader (yt-dlp)
 
-A simple Python script to download YouTube videos using the [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) library.
+A simple Python script to download YouTube videos and playlists using the [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) library.
 
 ## 📦 Features
 
-- Downloads videos from YouTube
+- Downloads single videos or full playlists from YouTube
 - Automatically saves them into a local `downloads/` folder
 - Uses video title and extension as filename
 - Gracefully handles errors
@@ -33,20 +33,30 @@ pip install yt-dlp
 python yt-downloader.py <YouTube URL>
 ```
 
-Example
+### Example  
+
+1. Download a single video:
+
 ```bash
-python yt-downloader.py https://www.youtube.com/shorts/abc123#@$
+python yt-downloader.py https://www.youtube.com/watch?v=abc123
 ```
+
+2. Download a playlist:
+
+```bash
+python yt-downloader.py https://www.youtube.com/playlist?list=PLxyz456
+```
+
 Output  
 
-The video will be saved in the downloads/ directory with a filename like: 
+The video(s) will be saved in the downloads/ directory with a filename like: 
 ```text
 downloads/downloaded-youtube-video.mp4
 ```
 
 ## 📌 Notes  
-The script uses sys.argv to accept the video URL as a command-line argument.
-
-Filenames are generated using yt-dlp's template system.
+- The script uses sys.argv to accept the video or playlist URL as a command-line argument.
+- Filenames are generated using yt-dlp's template system (%(title)s.%(ext)s).
+- yt-dlp automatically detects and downloads full playlists when a playlist URL is given..
 ##
 © 2025 – Built with ❤️ using Python and yt-dlp
