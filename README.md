@@ -51,6 +51,4 @@ python script_name.py
 ## 📜 License
 This repository is licensed under the **MIT License**.
 
----
 
-💡 *Tip: Feel free to contribute by adding your own Python scripts or improving the existing ones!*  
