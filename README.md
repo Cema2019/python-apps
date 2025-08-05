@@ -30,7 +30,7 @@ More apps will be added over time. 🚀
 - Written in **Python 3** 🐍
 - Simple, reusable, and modular scripts
 - Easy to run from the command line or integrate into other projects
-- Will use popular libraries like `pandas`, `sqlite3`, and `tkinter`
+- Will use popular libraries like `pandas`, `sqlite3`, etc.
 
 ---
 
