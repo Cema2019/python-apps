@@ -21,18 +21,18 @@ for sheet_name, df in excel_data.items():
     
     # Standardize column names to match the SQLite schema
     column_mapping = {
-        'TITULO DEL LIBRO': 'titulo',
-        'AUTOR': 'autor',
-        'EDITORIAL': 'editorial',
-        'FORMATO': 'formato',
-        'ESTADO DEL LIBRO': 'estado',
-        'CANTIDAD': 'cantidad',
-        'CANTIDAD DE EJEMPLARES': 'cantidad',  # Map Nicaragüense sheet's column
-        'FORMA DE ADQUISICION': 'forma_adquisicion',
+        'TITULO DEL LIBRO': 'titulo', # title
+        'AUTOR': 'autor', # author
+        'EDITORIAL': 'editorial', # publishing house
+        'FORMATO': 'formato', # format 
+        'ESTADO DEL LIBRO': 'estado', # book condition
+        'CANTIDAD': 'cantidad', # quantity
+        'CANTIDAD DE EJEMPLARES': 'cantidad',  
+        'FORMA DE ADQUISICION': 'forma_adquisicion', # Acquisition Type
         'ISBN': 'isbn',
-        'UBICACIÓN': 'ubicacion',
-        'CONTENIDO': 'contenido',
-        'DISPONIBLE': 'disponible'
+        'UBICACIÓN': 'ubicacion', # Location
+        'CONTENIDO': 'contenido', # Contents
+        'DISPONIBLE': 'disponible' # Avalability
     }
     df = df.rename(columns=column_mapping)
     
